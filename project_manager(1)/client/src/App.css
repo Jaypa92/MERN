@@ -1,0 +1,21 @@
+.form {
+  margin: auto;
+  text-align: center;
+}
+
+.input-box {
+  margin: auto;
+  height: 50px;
+  width: 300px;
+  background-color: lightgray;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+
+label {
+  width: 100px;
+  text-align: start;
+  margin-left: 5px;
+}
