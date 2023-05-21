@@ -1,18 +1,26 @@
 import './App.css';
 import Form from './components/form';
-import allProducts from './components/allProducts';
+import AllProducts from './components/AllProducts';
+import ViewProduct from './components/ViewProduct';
+import Edit from './components/Edit';
+import Main from './components/Main';
 import {
   Routes,
   Route,
-  Link
+  Link,
+  Navigate
 }
 from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-        {/* <Form/> */}
-        <allProducts/>
+      <Routes>
+        <Route path='/' element={<Navigate to={'/products'} />} />
+        <Route path='/products' element = {<Main/>} />
+        <Route path='/:id' element= {<ViewProduct/>} />
+        <Route path='/:id/edit' element = {<Edit/>} />
+      </Routes>
     </div>
   );
 }

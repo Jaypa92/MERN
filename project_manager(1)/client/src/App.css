@@ -1,6 +1,11 @@
+.App{
+  text-align: center;
+}
+
 .form {
   margin: auto;
   text-align: center;
+  border-bottom: 1px solid black;
 }
 
 .input-box {
@@ -18,4 +23,28 @@ label {
   width: 100px;
   text-align: start;
   margin-left: 5px;
+}
+
+.viewed-product{
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form{
+  margin-bottom: 20px;
+}
+
+button{
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 5px;
+}
+
+.view button{
+  display: block;
+  margin: auto;
+  margin-top: 20px;
 }
